@@ -27,6 +27,8 @@ class BarangResource extends Resource
 
     protected static ?string $label = 'Kelola Barang';
 
+    protected static?string $navigationGroup = 'Data Master';
+
     public static function form(Form $form): Form
     {
         return $form

@@ -26,6 +26,8 @@ class CustomerResource extends Resource
 
     protected static ?string $slug = 'kelola-pelanggan';
 
+    protected static?string $navigationGroup = 'Data Master';
+
     public static function form(Form $form): Form
     {
         return $form

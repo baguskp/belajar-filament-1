@@ -48,6 +48,13 @@ class PenjualanResource extends Resource
                     ->prefix('Rp. ')
                     ->numeric(0, ',', '.')
                     ->label('Total'),
+                TextColumn::make('faktur_detail_count')
+                    ->label('Jumlah Item')
+                    ->getStateUsing(function ($record) {
+                        return $record->faktur?->faktur_detail()->sum('qty') ?? 0;
+                    })
+                    ->sortable(),
+                
             ])
             ->filters([
                 //

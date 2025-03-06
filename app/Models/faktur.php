@@ -18,10 +18,10 @@ class faktur extends Model
 
     public function faktur_detail()
     {
-        return $this->hasMany(faktur_detail::class, 'faktur_id');
+        return $this->hasMany(faktur_detail::class);
     }
 
     public function penjualan(){
-        return $this->hasMany(penjualan::class, 'faktur_id');
+        return $this->hasMany(penjualan::class);
     }
 }

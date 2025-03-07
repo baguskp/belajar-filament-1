@@ -28,7 +28,7 @@ class FakturResource extends Resource
 {
     protected static ?string $model = Faktur::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-banknotes';
 
     protected static?string $navigationLabel = 'Faktur';
 
